@@ -1,5 +1,5 @@
 {
-  "name": "@zeative/media-process",
+  "name": "@zaadevofc/media-process",
   "version": "1.0.0",
   "description": "WhatsApp Media Processing library for Zaileys",
   "type": "module",
@@ -25,6 +25,8 @@
     "sharp": "0.33.0"
   },
   "devDependencies": {
-    "@types/fluent-ffmpeg": "^2.1.28"
+    "@types/fluent-ffmpeg": "^2.1.28",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }
