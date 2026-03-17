@@ -1,17 +1,21 @@
 {
   "name": "@zaadevofc/media-process",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WhatsApp Media Processing library for Zaileys",
-  "type": "module",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     }
+  },
+  "author": "zaadevofc",
+  "repository": {
+    "url": "git+https://github.com/zeative/media-process.git"
   },
   "scripts": {
     "build": "tsup"
