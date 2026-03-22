@@ -1,6 +1,6 @@
 {
-  "name": "@zaadevofc/media-process",
-  "version": "1.0.2",
+  "name": "@zaileys/media-process",
+  "version": "1.0.1",
   "description": "WhatsApp Media Processing library for Zaileys",
   "license": "MIT",
   "main": "dist/index.js",

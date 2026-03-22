@@ -9,7 +9,12 @@ function getSharp(): typeof import('sharp') | null {
   if (_sharpChecked) return _sharp;
   _sharpChecked = true;
   try {
-    _sharp = require('sharp');
+    const s = require('sharp');
+    // Sanity check: ensure it can at least be initialized
+    // Some environments (like Termux) might allow require but fail on invocation
+    if (typeof s === 'function') {
+      _sharp = s;
+    }
   } catch {
     _sharp = null;
   }
