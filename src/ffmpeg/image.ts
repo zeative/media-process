@@ -123,7 +123,7 @@ class SharpImageProcessor {
       }
 
       const maskImg = sharp(mask, { raw: { width: size, height: size, channels: 1 } });
-      img = img.joinChannel(await maskImg.toBuffer());
+      img = img.joinChannel(await maskImg.png().toBuffer());
     }
 
     return img.webp({ quality }).toBuffer();
